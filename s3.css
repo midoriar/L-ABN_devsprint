@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+
+
+/*----------------------------------- -2-My Expertise--------------------------------------------*/
+.about {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+    padding: 80px;
+    height: 672px;
+    /* flex-wrap: wrap; */
+
+
+}
+
+/* About content and image aligned in the same row */
+.about-content {
+    width: 744px;
+    height: 249px;
+    flex-wrap: wrap;
+
+}
+
+/* Profile image */
+.profile-image img {
+    width: 416px;
+    /* Adjust the image size */
+    height: 512px;
+}
+
+/* Title Styling */
+#title01 {
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #282938;
+    margin-bottom: 20px;
+}
+
+#title02 {
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: #282938;
+    font-size: 58px;
+    /* Added 'px' to font-size */
+    margin-bottom: 24px;
+}
+
+/* Paragraph Styling */
+#par1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+    color: #1C1E53;
+}
+
+
+
+/* <!----------------------------------- -3-MyAbout me ------------------------------------------------> */
+.sec22 {
+    display: flex;
+   flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    height: 672px;
+}
+
+.title10 {
+    width: 100%;
+}
+
+.experties {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px; 
+    width: 100%;
+}
+
+
+#profile-image02 {
+    gap: 10px;
+    border-radius: 8px;
+    padding: 10px;
+    height: 100px;
+
+}
+
+.cadre {
+
+    background-color: #F5FCFF;
+    border-radius: 8px;
+  
+    padding: 24px;
+    width: 308px ;
+    gap: 16px;
+
+}
+
+.cadre:hover {
+    background-color: #D2EFFF;
+    border: 1px solid #06A6FF;
+}
+
+
+
+#title11 {
+    font-weight: 600;
+    font-size: 16px;
+    color: #282938;
+    height: 24px;
+    margin-bottom: 8px;
+}
+
+#title12 {
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: #282938;
+    font-size: 48px;
+    /* Added 'px' to font-size */
+
+}
+
+#title13 {
+    font-weight: bold;
+    font-size: 21px;
+    color: #282938;
+    margin-bottom: 20px;
+
+}
+
+#title14 {
+
+    color: #000000;
+    font-size: 16px;
+    height: 150%;
+
+}
+
+/* Media Query for mobile (max-width: 768px) */
+@media (max-width: 768px) {
+
+    /* ----------My Expertise Section-------------- */
+    .sec22 {
+        padding: 20px;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experties {
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .cadre {
+        width: 100%; 
+        max-width: 350px;
+        padding: 16px;
+    }
+
+    #profile-image02 {
+        height: 80px;
+        width: auto;
+    }
+
+    /*---------------- About Section ----------------*/
+    .about {
+        flex-direction: column;
+        padding: 40px;
+        text-align: start;
+        height: auto;
+    }
+
+    .profile-image img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .about-content {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #title02 {
+        font-size: 36px; /* Reduce font size for About Me title */
+    }
+
+    #par1 {
+        font-size: 16px; /* Slightly reduce paragraph size */
+    }
+
+    /* Titles for sections */
+    #title12 {
+        font-size: 36px; /* Adjust My Expertise title */
+    }
+
+    #title13 {
+        font-size: 18px; /* Reduce title size for expertise cards */
+    }
+
+    #title14 {
+        font-size: 14px;
+    }
+}
+
+/* Media Query for extra small devices (max-width: 480px) */
+@media (max-width: 480px) {
+
+    .sec22 {
+        padding: 10px;
+    }
+
+    .cadre {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .profile-image img {
+        max-width: 200px;
+    }
+
+    /* Align title at the start */
+    #title02 {
+        font-size: 28px;
+        text-align: start; /* Ensure the title is aligned to the left */
+        margin: 0; /* Remove any default margin */
+        padding-left: 0; /* Ensure it starts at the very beginning */
+    }
+
+    #par1 {
+        font-size: 14px;
+    }
+}
+/* end of mobile */
+
+
+
+/* Testimonial Card */
+.testimonial-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 2px solid #06A6FF; /* Solid border color */
+    padding: 20px;
+    max-width: 400px;
+    margin-inline: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin-bottom: 20px; /* Space between cards */
+}
+
+/* Star Rating */
+.stars {
+    color: #ffcc00;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+/* Testimonial Text */
+.testimonial-text {
+    color: #333333;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* User Info */
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #f0f0f0;
+}
+
+.user-name {
+    font-weight: bold;
+    color: #222222;
+    margin: 0;
+}
+
+.user-title {
+    font-size: 0.9rem;
+    color: #777777;
+    margin: 0;
+}
+        .swiper {
+            width: 100%;
+            height: 300px;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        
+        
+        
+        
+        
+        
+        #dropMenu a:hover
+        {
+            text-decoration: underline;
+        }
+
+/* ------------------------add_css ----------------------------------------------- */
+
